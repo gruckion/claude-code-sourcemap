@@ -1,0 +1,36 @@
+{
+  "name": "@anthropic/claude-nested-agent",
+  "version": "1.0.0",
+  "description": "MCP server enabling sub-sub-agents in Claude Code via process isolation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-nested-agent": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "mcp",
+    "agents",
+    "nested-agents",
+    "sub-agents"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
